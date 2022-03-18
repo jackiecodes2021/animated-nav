@@ -4,6 +4,7 @@
 }
 body{
     background-color: #fce5cd;
+    /* this creates the half and half color background */
     background-image: linear-gradient(
         to bottom, 
         #fce5cd 0%,
@@ -52,6 +53,7 @@ nav ul li{
 }
 nav.active li{
     opacity: 1;
+    /* makes the words rotate */
     transform: rotateY(360deg)
 }
 nav ul a{
@@ -80,12 +82,14 @@ nav ul a{
     position: absolute;
     top: 10px;
     left: 5px;
+    /* this makes the lines spin */
     transition: transform 0.6s linear;
 }
 .icon .line2{
     top: auto;
     bottom: 10px;
 }
+/* this makes the 'x' with the lines */
 nav.active .icon .line1{
     transform: rotate(-765deg) translateY(5.5px);
 }
